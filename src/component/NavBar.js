@@ -9,7 +9,8 @@ export class NavBar extends Component {
   }
 
   openMenu() {
-    console.log("opened menu");
+    document.querySelector(".Navigation").style.visibility = "visible";
+    document.querySelector(".Navigation").style.opacity = "1";
   }
 
   render() {
@@ -21,7 +22,9 @@ export class NavBar extends Component {
           </div>
           <div className="header_logo_subName">Pit Style Barbecue</div>
         </div>
-        <span className="menu" onClick={this.openMenu}></span>
+        <div className="menu-container" onClick={this.openMenu}>
+          <span className="menu"></span>
+        </div>
       </div>
     );
   }
