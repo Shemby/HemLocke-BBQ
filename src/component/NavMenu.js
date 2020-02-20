@@ -5,18 +5,23 @@ import "../scss/NavMenu.scss";
 export class NavMenu extends Component {
   render() {
     return (
-      <div className="pageContainer">
-        <ul className="navContainer">
-          <NavLinks text="Home" />
+      <div className="Navigation">
+        <div className="pageContainer">
+          <div className="close">
+            <span className="icon"></span>
+          </div>
+          <ul className="navContainer">
+            <NavLinks text="Home" />
 
-          <NavLinks text="About" />
+            <NavLinks text="About" />
 
-          <NavLinks text="Menu" />
+            <NavLinks text="Menu" />
 
-          <NavLinks text="Location/Hours" />
+            <NavLinks text="Location/Hours" />
 
-          <NavLinks text="Contact" />
-        </ul>
+            <NavLinks text="Contact" />
+          </ul>
+        </div>
       </div>
     );
   }

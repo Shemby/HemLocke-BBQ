@@ -1,17 +1,29 @@
 .container {
   background: rgba(255, 0, 0, 0.58);
-  margin-top: 1.3rem;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 60%;
   position: relative;
   border-radius: 4px;
+  margin-bottom: 1.5rem;
   &:first-child {
     margin-top: 0;
   }
-  &:hover {
-    border: 2px solid white;
+  &::before {
+    content: "";
+    width: 1rem;
+    background-color: white;
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px 0 0 4px;
+  }
+  &:hover .link {
+    padding-left: 4rem;
+    transition: 0.5s ease;
   }
 }
 
@@ -21,14 +33,4 @@
   font-family: Lato;
   padding-left: 2rem;
   list-style: none;
-  &::before {
-    content: "";
-    width: 1rem;
-    background-color: white;
-    height: 5rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-  }
 }
