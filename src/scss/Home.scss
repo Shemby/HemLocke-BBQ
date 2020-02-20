@@ -1,11 +1,11 @@
 .background {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../images/Home.jpg');
+    url("../images/Home.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
-h1 {
+.homeHeading {
   color: white;
   font-size: 4rem;
   font-family: Lobster;
@@ -14,7 +14,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-h2 {
+.homeHeading_subHeading {
   color: white;
   font-size: 3.5rem;
   font-family: Lobster;
@@ -23,6 +23,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .main_text {
   display: flex;
   flex-direction: column;

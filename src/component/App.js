@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavMenu from "./NavMenu";
 import NavBar from "./NavBar";
 import Home from "./Home";
+import Contact from "./Contact";
 import "../scss/Global.scss";
 
 export class App extends Component {
@@ -9,8 +10,9 @@ export class App extends Component {
     return (
       <div>
         <NavBar />
-        <Home />
         <NavMenu />
+        <Home />
+        <Contact />
       </div>
     );
   }
