@@ -41,5 +41,50 @@ h2 {
 }
 
 .contactForm {
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  input,
+  textarea {
+    background: rgba(255, 255, 255, 0.178);
+    border: none;
+    margin-bottom: 2rem;
+  }
+  .fname {
+    float: left;
+  }
+  .lname {
+    float: right;
+  }
+  .fname,
+  .lname {
+    width: 45%;
+    height: 3rem;
+    font-family: Lato;
+    font-size: 1.1rem;
+    &::placeholder {
+      color: red;
+    }
+  }
+  .subject {
+    height: 3rem;
+  }
+  .message,
+  .subject {
+    width: 100%;
+    display: block;
+    font-family: Lato;
+    font-size: 1.1rem;
+    &::placeholder {
+      color: red;
+    }
+  }
+  .message {
+    height: 8rem;
+    padding: 2px;
+  }
+  .submit {
+    width: 40%;
+    height: 3rem;
+    display: block;
+  }
 }

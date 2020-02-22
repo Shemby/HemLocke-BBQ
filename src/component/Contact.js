@@ -36,14 +36,13 @@ export class Contact extends Component {
         </div>
 
         <form action="submit" className="contactForm">
-          <label htmlFor="fname"></label>
-          <input type="text" className="fname" />
-          <label htmlFor="lname"></label>
-          <input type="text" className="lname" />
-          <label htmlFor="subject"></label>
-          <input type="text" className="subject" />
-          <label htmlFor="message"></label>
-          <input type="text" className="message" />
+          <input type="text" placeholder="First Name" className="fname" />
+
+          <input type="text" placeholder="Last Name" className="lname" />
+
+          <input type="text" placeholder="Subject" className="subject" />
+
+          <textarea type="text" placeholder="Message" className="message" />
           <input type="submit" className="submit" value="submit" />
         </form>
       </div>
