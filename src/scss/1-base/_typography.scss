@@ -7,9 +7,11 @@ body {
 .heading_main {
   font-family: lobster;
   font-size: $font_heading;
+  text-align: center;
   &-small {
     font-family: lobster;
     font-size: $font_heading-sub;
+    text-align: center;
   }
 }
 
