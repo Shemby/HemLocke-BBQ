@@ -35,14 +35,13 @@
 }
 
 .card_media {
-  position: absolute;
-  background-color: white;
-  right: 5rem;
-  top: 15%;
-  height: 15rem;
-  width: 10rem;
-  img {
+  svg {
     width: 5rem;
     height: 5rem;
+    fill: white;
+    background: $background;
+    &:hover {
+      fill: $accent;
+    }
   }
 }
