@@ -1,54 +1,30 @@
-.background {
+.home {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../../images/Home.jpg');
-  height: 100vh;
   background-size: cover;
   background-position: center;
 }
-.homeHeading {
-  color: white;
-  font-size: 4rem;
-  font-family: Lobster;
+.home_heading {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.homeHeading_subHeading {
-  color: white;
-  font-size: 3.5rem;
-  font-family: Lobster;
+.home_heading-sub {
   position: absolute;
   top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.main_text {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 1.1rem;
-  font-family: Lato;
-  text-align: center;
+.home_card {
   position: absolute;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: 15rem;
+  justify-content: space-around;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  width: 78%;
-  height: 30%;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  line-height: 1.7rem;
-  border-radius: 3px;
-
-  &_secondary {
-    margin-top: 2rem;
-    span {
-      color: red;
-      text-decoration: underline;
-    }
-  }
 }

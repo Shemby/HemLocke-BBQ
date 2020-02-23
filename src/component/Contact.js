@@ -4,7 +4,7 @@ export class Contact extends Component {
   render() {
     return (
       <div className='page'>
-        <h1 className='header_main'>Contact Us</h1>
+        <h1 className='heading_main'>Contact Us</h1>
         <div className='card'>
           <h2 className='card_heading'>Make a Reservation</h2>
           <div className='card_text'>
@@ -34,15 +34,11 @@ export class Contact extends Component {
         </div>
 
         <form action='submit' className='form_contact'>
-          <input
-            type='text'
-            placeholder='First Name'
-            className='form_input-small'
-          />
+          <input type='text' placeholder='Name' className='form_input-sma' />
 
           <input
-            type='text'
-            placeholder='Last Name'
+            type='email'
+            placeholder='Email'
             className='form_input-small'
           />
 

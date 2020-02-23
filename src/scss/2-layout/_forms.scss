@@ -1,0 +1,16 @@
+.form_contact {
+  width: 80%;
+  margin: auto;
+  input,
+  textarea {
+    background: $background_transparent-light;
+    border: none;
+    margin-bottom: 2rem;
+  }
+}
+.form_input-small {
+  width: 45%;
+  height: 3rem;
+  font-family: Lato;
+  font-size: 1.1rem;
+}

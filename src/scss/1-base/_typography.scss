@@ -1,0 +1,22 @@
+body {
+  @import url('https://fonts.googleapis.com/css?family=Lato|Lobster&display=swap');
+  font-family: Lato;
+  color: white;
+}
+
+.heading_main {
+  font-family: lobster;
+  font-size: $font_heading;
+  &-small {
+    font-family: lobster;
+    font-size: $font_heading-sub;
+  }
+}
+
+.card_text {
+  font-size: $font_medium;
+}
+
+.red {
+  color: $accent;
+}

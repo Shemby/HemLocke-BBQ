@@ -1,11 +1,12 @@
 .navbar {
-  // position: fixed;
+  position: fixed;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 40px;
   font-family: Lato;
+  background-color: $background;
   z-index: +100;
   &_list {
     visibility: hidden;
@@ -25,6 +26,7 @@
       visibility: visible;
       opacity: 1;
       width: 60%;
+      z-index: 100;
     }
   }
   &_link {
@@ -46,9 +48,4 @@
   height: 3rem;
   width: 3rem;
   cursor: pointer;
-}
-
-.navbar_close {
-  visibility: hidden;
-  opacity: 0;
 }

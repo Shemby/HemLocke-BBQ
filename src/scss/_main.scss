@@ -1,18 +1,19 @@
-//Base Imports
-@import './0-base/reset';
-@import './0-base/typography';
-
 //Utilities Imports
-@import './1-utils/functions';
-@import './1-utils/helpers';
-@import './1-utils/mixins';
-@import './1-utils/variables';
+@import './0-utils/functions';
+@import './0-utils/helpers';
+@import './0-utils/mixins';
+@import './0-utils/variables';
+
+//Base Imports
+@import './1-base/reset';
+@import './1-base/typography';
 
 //Layout Imports
 @import './2-layout/footer';
 @import './2-layout/forms';
 @import './2-layout/header';
 @import './2-layout/navigation';
+@import './2-layout/sections';
 
 //Pages Imoports
 @import './3-pages/about';
@@ -26,6 +27,7 @@
 
 //Components Imports
 @import './5-components/buttons';
+@import './5-components/cards';
 @import './5-components/icons';
 @import './5-components/logo';
 @import './5-components/nav-links';

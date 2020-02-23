@@ -1,6 +1,7 @@
 .navbar_logo {
   display: inline-flex;
   align-items: center;
+  margin-left: 1.5rem;
   &-name {
     font-size: 1.3rem;
     span {
@@ -10,6 +11,7 @@
       width: 2px;
       height: 2.5rem;
       margin-left: 0.5rem;
+      top: 0.8rem;
     }
   }
   &-desc {
