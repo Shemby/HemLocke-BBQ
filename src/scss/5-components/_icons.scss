@@ -33,3 +33,16 @@
     background-color: $accent;
   }
 }
+
+.card_media {
+  position: absolute;
+  background-color: white;
+  right: 5rem;
+  top: 15%;
+  height: 15rem;
+  width: 10rem;
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
