@@ -1,10 +1,5 @@
-import React from "react";
-import "../scss/NavLinks.scss";
+import React from 'react';
 
 export default function NavLinks(props) {
-  return (
-    <li className="container">
-      <div className="link">{props.text}</div>
-    </li>
-  );
+  return <li className='nav_link'>{props.text}</li>;
 }
