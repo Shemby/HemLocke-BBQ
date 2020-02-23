@@ -1,20 +1,32 @@
 import React, { Component } from 'react';
+import NavMenu from './NavMenu';
 
 export class NavBar extends Component {
   constructor(props) {
     super(props);
-
-    this.openMenu = this.openMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
+    this.state = {
+      menuOpen: false
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  openMenu() {
-    document.querySelector('.Navigation').style.visibility = 'visible';
-    document.querySelector('.Navigation').style.opacity = '1';
-  }
-  closeMenu() {
-    document.querySelector('.nav_list').style.visibility = 'hidden';
-    document.querySelector('.nav_list').style.opacity = '0';
+  toggleMenu() {
+    const navBtn = document.querySelector('.navbar_btn');
+    const navList = document.querySelector('.navbar_list');
+    console.log(this.navBtn);
+    if (!this.state.menuOpen) {
+      navBtn.classList.add('open');
+      navList.classList.add('open');
+      this.setState({
+        menuOpen: true
+      });
+    } else {
+      navBtn.classList.remove('open');
+      navList.classList.remove('open');
+      this.setState({
+        menuOpen: false
+      });
+    }
   }
 
   render() {
@@ -26,12 +38,10 @@ export class NavBar extends Component {
           </div>
           <div className='navbar_logo-desc'>Pit Style Barbecue</div>
         </div>
-        <div className='navbar_open' onClick={this.openMenu}>
-          <span className='navbar_open-icon'></span>
+        <div className='navbar_btn' onClick={this.toggleMenu}>
+          <div className='navbar_btn-icon'></div>
         </div>
-        <div className='navbar_close' onClick={this.closeMenu}>
-          <span className='navbar_close-icon'></span>
-        </div>
+        <NavMenu />
       </div>
     );
   }

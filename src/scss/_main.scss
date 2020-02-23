@@ -2,9 +2,11 @@
 @import './0-base/reset';
 @import './0-base/typography';
 
-//Components Imports
-@import './1-components/buttons';
-@import './1-components/nav-links';
+//Utilities Imports
+@import './1-utils/functions';
+@import './1-utils/helpers';
+@import './1-utils/mixins';
+@import './1-utils/variables';
 
 //Layout Imports
 @import './2-layout/footer';
@@ -22,10 +24,10 @@
 //Themes Imports
 @import './4-themes/theme';
 
-//Utilities Imports
-@import './5-utils/functions';
-@import './5-utils/helpers';
-@import './5-utils/mixins';
-@import './5-utils/variables';
+//Components Imports
+@import './5-components/buttons';
+@import './5-components/icons';
+@import './5-components/logo';
+@import './5-components/nav-links';
 
 //Vendors Imports

@@ -1,0 +1,35 @@
+.navbar_btn-icon {
+  position: absolute;
+  bottom: 1.5rem;
+
+  &,
+  &::before,
+  &::after {
+    width: 3rem;
+    height: 3px;
+    background-color: white;
+    content: '';
+    position: absolute;
+    transition: 0.3s;
+  }
+  &::before {
+    top: -0.8rem;
+  }
+  &::after {
+    top: 0.8rem;
+  }
+}
+.navbar_btn.open .navbar_btn-icon {
+  background: transparent;
+
+  &::before {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: $accent;
+  }
+  &::after {
+    top: 0;
+    transform: rotate(135deg);
+    background-color: $accent;
+  }
+}
