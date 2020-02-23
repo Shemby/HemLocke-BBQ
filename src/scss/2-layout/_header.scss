@@ -19,7 +19,7 @@
         width: 2px;
         height: 2rem;
         background-color: white;
-        content: "";
+        content: '';
         position: absolute;
         top: 1rem;
         margin-left: 0.5rem;
@@ -55,7 +55,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
     }

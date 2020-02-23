@@ -33,7 +33,7 @@
   }
   .icon {
     position: absolute;
-    content: "";
+    content: '';
     background-color: white;
     width: 3rem;
     height: 3px;
@@ -41,7 +41,7 @@
     bottom: 1.4rem;
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       background-color: white;
       width: 3rem;
       height: 3px;
