@@ -83,6 +83,7 @@ export class Menu extends Component {
             </p>
           </div>
         </div>
+
         <div className='card'>
           <h1 className='card_heading'>
             <span className='red'>Sides</span>{' '}
@@ -107,20 +108,16 @@ export class Menu extends Component {
             <h2 className='card_heading-sub'>Mac &amp; Cheese</h2>
           </div>
         </div>
-        <div className='card'>
+
+        <div className='card dessert'>
           <h1 className='card_heading'>
             <span className='red'>Dessert</span>
           </h1>
           <div className='card_subcard'>
             <h2 className='card_heading-sub'>
-              <span className='red'>**</span>Coconut Cream Pie{' '}
+              Coconut Cream Pie
               <span className='red'>$3.00</span>
             </h2>
-            <p className='card_text'>
-              The HemLocke Coconut Cream Pie is the signature dessert of our
-              establishment. It comes from a recipe passed down from generation
-              to generation.
-            </p>
           </div>
           <div className='card_subcard'>
             <h2 className='card_heading-sub'>
@@ -129,7 +126,7 @@ export class Menu extends Component {
           </div>
           <div className='card_subcard'>
             <h2 className='card_heading-sub'>
-              Texas Sheet Cake <span className='red'>$2.50</span>
+              TX Sheet Cake <span className='red'>$2.50</span>
             </h2>
           </div>
           <div className='card_subcard'>

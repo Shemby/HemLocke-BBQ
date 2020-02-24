@@ -3,7 +3,7 @@
   .heading_main {
     color: red;
     font-family: Lato;
-    margin: 1rem 0 0 0;
+    margin: 0 0 0 0;
   }
   .heading_subText {
     width: 90%;
@@ -20,7 +20,8 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 0.5rem;
+    padding: 0 0 0 0;
+    line-height: 2.4rem;
     &_outlined {
       border: 1px solid black;
     }
@@ -37,13 +38,8 @@
       flex-direction: column;
       width: 50%;
       align-items: center;
-      justify-content: space-between;
       padding: 0.3rem 0.5rem;
-      flex: 1 50%;
 
-      .sides {
-        height: 10rem;
-      }
       .card_heading-sub {
         font-size: $font_menu-heading;
       }

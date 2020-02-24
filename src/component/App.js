@@ -13,10 +13,9 @@ export class App extends Component {
         <NavBar />
         <Home />
         <About />
-
+        <Menu />
         <Location />
         <Contact />
-        <Menu />
       </div>
     );
   }
