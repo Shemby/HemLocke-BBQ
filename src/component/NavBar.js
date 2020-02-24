@@ -13,7 +13,6 @@ export class NavBar extends Component {
   toggleMenu() {
     const navBtn = document.querySelector('.navbar_btn');
     const navList = document.querySelector('.navbar_list');
-    console.log(this.navBtn);
     if (!this.state.menuOpen) {
       navBtn.classList.add('open');
       navList.classList.add('open');
