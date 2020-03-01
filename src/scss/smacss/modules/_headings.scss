@@ -1,0 +1,23 @@
+.heading {
+  font-size: 4rem;
+  @include heading;
+  margin: 1rem;
+  &--card {
+    font-size: 1.8rem;
+    @include heading;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  &--small {
+    font-size: 2.8rem;
+    @include heading;
+    margin: 0;
+  }
+  &--sub-heading {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
+    color: $accent;
+    margin: 1rem 0;
+  }
+}

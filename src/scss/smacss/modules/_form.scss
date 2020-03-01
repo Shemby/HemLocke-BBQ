@@ -1,0 +1,26 @@
+.form {
+  &--group {
+    width: 100%;
+  }
+  &--input-small,
+  &--submit {
+    width: 48%;
+    height: 2rem;
+    background-color: $white;
+  }
+  &--input-large {
+    width: 100%;
+    height: 2rem;
+    background-color: $white;
+  }
+  &--textarea {
+    width: 100%;
+    height: 5rem;
+    background-color: $white;
+  }
+  //   &--submit{
+  //       width: 40%;
+  //       height: 2rem;
+  //       background-color: $white;
+  //   }
+}

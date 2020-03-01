@@ -1,32 +1,45 @@
 import React, { Component } from 'react';
-import young from '../images/Owner_Young.jpg';
-import family from '../images/Owner_Family.jpg';
+import plate from '../images/plate.jpg';
+import owner from '../images/owner.jpg';
 
 export class About extends Component {
   render() {
     return (
-      <div className='page page_about'>
-        <h1 className='heading_main'>About Us</h1>
-        <div className='card_text card_text-top'>
-          Here at HemLocke Barbecue, we have two priorities. The first is
-          family. Our founder, <span className='red'>Carrol Locke</span>, was a
-          man who loved his family above all else and considered it his first
-          priority. Secondarily, Carrol was about making great barbecue.
-          <span className='red'>perfected his methods</span>He over years of
-          family barbecues. So when you sit down at one of our tables and bite
-          into our traditional wood smoked, locally sourced, carefully crafted
-          food, well, it’s like for a moment,
-          <span className='red'>you’re one of the family</span>.
+      <div className='page about'>
+        <h1 className='heading'>About Us</h1>
+        <div className='about--food'>
+          <h2 className='heading--sub-heading'>Our Food</h2>
+          <img src={plate} alt='' className='image--ribs' />
+          <p className='about--food-text'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet
+            id eros elementum accumsan. Nam congue vulputate massa at rhoncus.
+            Etiam sollicitudin hendrerit consequat. Nulla facilisi. Fusce eu sem
+            in risus malesuada tincidunt. Donec cursus lectus a malesuada
+            pellentesque. Donec mattis velit sagittis ante dictum, in sodales ex
+            lacinia. Cras felis libero, dapibus id tempus eget, feugiat vitae
+            ex. Nam vel interdum purus. Sed id elit sed odio gravida vulputate.
+            Vivamus viverra sodales ante, at tempus dui ullamcorper at. Cras
+            urna nisl, malesuada non lorem vel, iaculis sagittis risus. Nam
+            tristique efficitur mi sed cursus.
+          </p>
         </div>
-        <img src={young} alt='' className='card_img-young' />
-        <div className='card_text card_text-bottom'>
-          HemLocke Barbecue makes sure that we source our meats from the highest
-          quality <span className='red'>local suppliers</span>. You won’t find
-          hormones, antibiotics, or animals who have been fed a sub par diet at
-          our establishment. At HemLocke, we believe in providing our family the
-          <span className='red'>quality</span> they deserve.
+        <div className='about--owner'>
+          <h2 className='heading--sub-heading'>Meet the Owner</h2>
+          <img src={owner} alt='' className='image--owner' />
+          <p className='about--owner-text'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet
+            id eros elementum accumsan. Nam congue vulputate massa at rhoncus.
+            Etiam sollicitudin hendrerit consequat. Nulla facilisi. Fusce eu sem
+            in risus malesuada tincidunt. Donec cursus lectus a malesuada
+            pellentesque. Donec mattis velit sagittis ante dictum, in sodales ex
+            lacinia. Cras felis libero, dapibus id tempus eget, feugiat vitae
+            ex. Nam vel interdum purus. Sed id elit sed odio gravida vulputate.
+            Vivamus viverra sodales ante, at tempus dui ullamcorper at. Cras
+            urna nisl, malesuada non lorem vel, iaculis sagittis risus. Nam
+            tristique efficitur mi sed cursus. Fusce ut velit nisi. Ut at dolor
+            lobortis, consectetur ex vel, suscipit erat.
+          </p>
         </div>
-        <img src={family} alt='' className='card_img-family' />
       </div>
     );
   }

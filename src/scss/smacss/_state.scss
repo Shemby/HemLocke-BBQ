@@ -1,0 +1,21 @@
+.isOpen {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+}
+.navbar--btn.isOpen .navbar--icon {
+  background-color: rgba(0, 0, 0, 0);
+  &::before {
+    transform: translateY(12px) rotate(135deg);
+    background-color: $accent;
+  }
+  &::after {
+    transform: translateY(-12px) rotate(-135deg);
+    background-color: $accent;
+  }
+}
+.navbar--list-item:hover {
+  color: #f5f5f5;
+  border-bottom: 1px solid $soft-white;
+  cursor: pointer;
+}

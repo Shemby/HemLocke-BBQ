@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
+import hemlocke from '../images/HemLocke.svg';
 
 export class Home extends Component {
   render() {
     return (
       <div className='page home'>
-        <h1 className='heading_main home_heading'>HemLocke</h1>
-        <h2 className='heading_main-small home_heading-sub'>Barbecue</h2>
-        <div className='card home_card'>
-          <p className='card_text'>
-            Whether you like pork, beef, or poultry, our experienced pit masters
-            are commited to bringing you a quality product.
-          </p>
-          <p className='card_text'>
-            Take a look see at our <span className='red'>menu</span>
-          </p>
+        <div className='home--logo-container'>
+          <h1 className='heading'>HemLocke</h1>
+          <img src={hemlocke} alt='logo' className='home--logo' />
+        </div>
+        <div className='home--btn-container'>
+          <button className='btn--menu'>See Our Menu</button>
+          <button className='btn--contact'>Contact Us</button>
         </div>
       </div>
     );

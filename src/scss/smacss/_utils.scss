@@ -1,0 +1,16 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin heading {
+  font-family: Lobster;
+  font-weight: lighter;
+  text-shadow: 2px 2px 4px $accent;
+  text-align: center;
+  margin: 0;
+}
+.red {
+  color: $accent;
+}

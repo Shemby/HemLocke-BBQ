@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 export class Menu extends Component {
   render() {
     return (
-      <div className='page page_menu'>
-        <h1 className='heading_main'>Menu</h1>
+      <div className='page menu'>
+        <h1 className='menu--heading'>Menu</h1>
         <p className='heading_subText'>
           <span className='red'>**</span>Every purchase of a HemLocke signature
           meat comes with your choice of{' '}

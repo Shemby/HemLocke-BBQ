@@ -1,38 +1,6 @@
-//Utilities Imports
-@import './0-utils/functions';
-@import './0-utils/helpers';
-@import './0-utils/mixins';
-@import './0-utils/variables';
-
-//Base Imports
-@import './1-base/reset';
-@import './1-base/typography';
-
-//Layout Imports
-@import './2-layout/contact';
-@import './2-layout/footer';
-@import './2-layout/forms';
-@import './2-layout/header';
-@import './2-layout/navigation';
-@import './2-layout/sections';
-
-//Pages Imoports
-@import './3-pages/about';
-@import './3-pages/contact';
-@import './3-pages/home';
-@import './3-pages/location';
-@import './3-pages/menu';
-
-//Themes Imports
-@import './4-themes/theme';
-
-//Components Imports
-@import './5-components/buttons';
-@import './5-components/cards';
-@import './5-components/icons';
-@import './5-components/images';
-@import './5-components/logo';
-@import './5-components/nav-links';
-@import './5-components/shapes';
-
-//Vendors Imports
+@import './smacss/vars';
+@import './smacss/utils';
+@import './smacss/base';
+@import './smacss/layout';
+@import './smacss/modules';
+@import './smacss/state';

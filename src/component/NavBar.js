@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavMenu from './NavMenu';
+import HL from '../images/HL.svg';
 
 export class NavBar extends Component {
   constructor(props) {
@@ -11,17 +12,17 @@ export class NavBar extends Component {
   }
 
   toggleMenu() {
-    const navBtn = document.querySelector('.navbar_btn');
-    const navList = document.querySelector('.navbar_list');
+    const navBtn = document.querySelector('.navbar--btn');
+    const navList = document.querySelector('.navbar--list');
     if (!this.state.menuOpen) {
-      navBtn.classList.add('open');
-      navList.classList.add('open');
+      navBtn.classList.add('isOpen');
+      navList.classList.add('isOpen');
       this.setState({
         menuOpen: true
       });
     } else {
-      navBtn.classList.remove('open');
-      navList.classList.remove('open');
+      navBtn.classList.remove('isOpen');
+      navList.classList.remove('isOpen');
       this.setState({
         menuOpen: false
       });
@@ -31,14 +32,9 @@ export class NavBar extends Component {
   render() {
     return (
       <div className='navbar'>
-        <div className='navbar_logo'>
-          <div className='navbar_logo-name'>
-            HemLocke<span></span>
-          </div>
-          <div className='navbar_logo-desc'>Pit Style Barbecue</div>
-        </div>
-        <div className='navbar_btn' onClick={this.toggleMenu}>
-          <div className='navbar_btn-icon'></div>
+        <img src={HL} alt='' className='navbar--logo' />
+        <div className='navbar--btn' onClick={this.toggleMenu}>
+          <div className='navbar--icon'></div>
         </div>
         <NavMenu />
       </div>

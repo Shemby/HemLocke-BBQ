@@ -1,0 +1,140 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &--btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+  }
+  &--icon {
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+    }
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+  &--list {
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    &-item {
+      @include flex-center;
+      padding: 1.5rem;
+    }
+  }
+  &--logo {
+    margin-left: 5%;
+  }
+}
+.home {
+  height: 100vh;
+  padding-top: 5rem;
+  &--btn-container {
+    width: 100%;
+    margin-top: 10vh;
+    @include flex-center;
+    justify-content: space-around;
+  }
+  &--heading {
+    margin: 1.5rem;
+  }
+  &--logo {
+    &-container {
+      @include flex-center;
+      flex-direction: column;
+    }
+  }
+}
+.about {
+  &--food,
+  &--owner {
+    padding: 1rem;
+    &-text {
+      font-size: 0.9rem;
+    }
+  }
+}
+.card {
+  padding: 0 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4rem;
+  &--contact {
+    padding: 1rem 0 0 1rem;
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+  .image--clock {
+    margin: 0.5rem 0;
+  }
+  &--info {
+    margin: 0.5rem 0;
+    text-align: left;
+    &-center {
+      align-self: center;
+    }
+    &-contact {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      height: 3rem;
+    }
+  }
+}
+.phone,
+.mail,
+.fax {
+  margin-right: 1rem;
+}
+.half {
+  display: flex;
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3rem;
+  &--group {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--input-small {
+    margin-bottom: 0.4rem;
+    margin-top: 1.5rem;
+  }
+  &--input-large {
+    margin-bottom: 0.4rem;
+  }
+  &--textarea {
+    margin-bottom: 0.4rem;
+  }
+  &--submit {
+    padding: 0;
+  }
+}

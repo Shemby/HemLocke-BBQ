@@ -2,6 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//Normalize Import
+import 'normalize.css';
 //CSS Import
 import './scss/_main.scss';
 

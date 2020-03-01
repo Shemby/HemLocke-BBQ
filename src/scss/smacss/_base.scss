@@ -1,0 +1,20 @@
+body {
+  font-family: Lato;
+  color: $white;
+  background: $background;
+}
+* {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: $background;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster&display=swap');

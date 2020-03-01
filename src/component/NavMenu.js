@@ -4,15 +4,11 @@ import NavLinks from './NavLinks';
 export class NavMenu extends Component {
   render() {
     return (
-      <ul className='navbar_list'>
+      <ul className='navbar--list'>
         <NavLinks text='Home' />
-
         <NavLinks text='About' />
-
         <NavLinks text='Menu' />
-
         <NavLinks text='Location/Hours' />
-
         <NavLinks text='Contact' />
       </ul>
     );
