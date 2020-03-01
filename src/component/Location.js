@@ -8,7 +8,7 @@ export class Location extends Component {
       <div className='page location'>
         <div className='card'>
           <h1 className='heading--card'>Location</h1>
-          <img src={ping} alt='' className='image--ping' />
+          <img src={ping} alt='' className='icons--ping' />
           <p className='card--info-center'>
             <span className='red'>224 W Pecan St.</span> Celina, TX 75009
           </p>
@@ -16,7 +16,7 @@ export class Location extends Component {
 
         <div className='card'>
           <h1 className='heading--card'>Hours of Operation</h1>
-          <img src={clock} alt='' className='image--clock' />
+          <img src={clock} alt='' className='icons--clock' />
           <div className='card--info-container'>
             <div className='card--info'>
               <span className='red'>Sunday-Monday</span> : Closed

@@ -1,23 +1,39 @@
 .heading {
   font-size: 4rem;
-  @include heading;
-  margin: 1rem;
   &--card {
     font-size: 1.8rem;
-    @include heading;
-    margin-bottom: 1rem;
-    text-align: left;
   }
   &--small {
     font-size: 2.8rem;
-    @include heading;
-    margin: 0;
   }
   &--sub-heading {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     font-weight: lighter;
     color: $accent;
-    margin: 1rem 0;
+  }
+  &--sub-text {
+    font-size: 0.9rem;
+  }
+  &--menu {
+    font-size: 3rem;
+    color: $accent;
+    text-decoration: underline;
+    &-sub {
+      font-size: 2.5rem;
+      width: 100%;
+      font-weight: lighter;
+    }
+    &-item {
+      font-size: 1rem;
+    }
+    &-price {
+      font-size: 2rem;
+    }
+  }
+  &--form {
+    @include heading;
+    font-size: 2rem;
+    padding-top: 2rem;
   }
 }

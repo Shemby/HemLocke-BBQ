@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home';
 import About from './About';
@@ -10,14 +10,16 @@ import Contact from './Contact';
 export class App extends Component {
   render() {
     return (
-      <div>
-        <NavBar />
-        <Home />
-        <About />
-        <Menu />
-        <Location />
-        <Contact />
-      </div>
+      <Router>
+        <div>
+          <NavBar />
+          <Home />
+          <About />
+          <Menu />
+          <Location />
+          <Contact />
+        </div>
+      </Router>
     );
   }
 }

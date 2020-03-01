@@ -11,4 +11,15 @@
       width: 80%;
     }
   }
+  &--menu {
+    height: 8rem;
+    width: 48%;
+    &-text {
+      font-size: 0.8rem;
+    }
+    &-small {
+      height: 2.5rem;
+      width: 48%;
+    }
+  }
 }

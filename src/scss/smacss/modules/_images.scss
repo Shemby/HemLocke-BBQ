@@ -23,9 +23,9 @@
 }
 .icons {
   padding: 1rem;
-  .fb,
-  .ig,
-  .tw {
+  &--fb,
+  &--ig,
+  &--tw {
     height: 3.5rem;
     fill: $white;
     stroke: $accent;
@@ -34,12 +34,17 @@
       stroke: $white;
     }
   }
+  &--phone,
+  &--fax,
+  &--mail {
+    height: 2rem;
+  }
+  &--ping,
+  &--clock {
+    height: 5rem;
+  }
 }
-.phone,
-.fax,
-.mail {
-  height: 2rem;
-}
+
 .home {
   &--logo {
     height: 15rem;
